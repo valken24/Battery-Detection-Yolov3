@@ -1,0 +1,6 @@
+# entrenamiento
+python train.py --cfg cfg/yolov3-tiny-obj.cfg --weights yolov3-tiny.weights --data data/obj.data --lr 0.0005 --unfreeze 2
+
+# detección
+python detect.py --weights weights/last.pt
+python detect.py --weights weights/best.pt
